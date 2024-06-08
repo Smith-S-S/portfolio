@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3 Cuts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d0cc513d47.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+
+    <style>
+        body {
+            font-family: 'Dekko';
+        }
+        .learn-more-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .learn-more-section h1 {
+            margin-bottom: 50px;
+        }
+        .learn-more-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+            padding: 0 20px;
+        }
+        .learn-more-grid .grid-item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .learn-more-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .learn-more-grid .grid-item a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        .learn-more-grid .grid-item h3 {
+            padding: 15px;
+            background: #fff;
+            margin: 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Existing Content -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Service</a></li>
+                <li><a href="#services">Works</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-test">
+            <p>Smith SS</p>
+            <h1>Innovate <span>Vision</span> With <br> Cutting-Edge AI</h1>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h2>Computer Vision Solutions</h2>
+                    <p>Object detection, object tracking, video analysis, and image processing for various applications.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h2>Machine Learning Models</h2>
+                    <p>Development and deployment of machine learning models for predictive maintenance, anomaly detection, and other use cases.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h2>AI-Powered Solutions</h2>
+                    <p>End-to-end AI solutions, including data preprocessing, model training, deployment, and monitoring, leveraging cutting-edge techniques like deep learning.</p>
+                    <a href="https://bit.ly/4bwcjN4"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- Existing Works Section -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">MY Works</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>My Projects</h2>
+                <p>Innovative computer vision and machine learning solutions:</p>
+                <ul>
+                    <li>Contactless biometric systems</li>
+                    <li>Retail engagement tracking</li>
+                    <li>Predictive maintenance models</li>
+                </ul>                
+                <a href="#learn-more">Click Project</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-blog"></i>
+                <h2>MY Blog</h2>
+                <p>Sharing insightful articles, tutorials, and experiences on Computer Vision, Machine Learning, and AI-powered solutions.</p>
+                <a href="https://medium.com/@asbmerin" target="_blank">Visit Blog</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <h2>Daily Ideas</h2>
+                <p>Sharing creative ideas, inspirations, and behind-the-scenes glimpses of my projects on Instagram.</p>
+                <a href="https://www.instagram.com/s3_cuts/" target="_blank">Follow on Instagram</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    // Add this script to your existing JavaScript
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var learnMoreLink = document.querySelectorAll('a[href="#learn-more"]');
+        var learnMoreSection = document.getElementById('learn-more');
+
+        learnMoreLink.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                learnMoreSection.style.display = 'block';
+                // You can add more logic here if needed
+            });
+        });
+    });
+</script>
+
+
+<!-- New Learn More Section -->
+<div id="learn-more" class="learn-more-section" style="display: none;">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="learn-more-grid">
+            <!-- Example grid items -->
+            <div class="grid-item">
+                <a href="https://www.linkedin.com/posts/smith-ss-9742751b2_retail-retail-dataanalytics-activity-7204050457529319424-4RDf?utm_source=share&utm_medium=member_desktop"><img src="example1.jpg" alt="Image 1"><h3>Engage Vision Pro</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example2.jpg" alt="Image 2"><h3>Image 2</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example3.jpg" alt="Image 3"><h3>Image 3</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example4.jpg" alt="Image 4"><h3>Image 4</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example5.jpg" alt="Image 5"><h3>Image 5</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example6.jpg" alt="Image 6"><h3>Image 6</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example7.jpg" alt="Image 7"><h3>Image 7</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example8.jpg" alt="Image 8"><h3>Image 8</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example9.jpg" alt="Image 9"><h3>Image 9</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example10.jpg" alt="Image 10"><h3>Image 10</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example11.jpg" alt="Image 11"><h3>Image 11</h3></a>
+            </div>
+            <div class="grid-item">
+                <a href="#"><img src="example12.jpg" alt="Image 12"><h3>Image 12</h3></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a Computer Vision and Machine Learning Engineer, I specialize in developing cutting-edge algorithms and solutions for object detection, object tracking, video analysis, and predictive maintenance.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Computer Vision</span><br>Expertise in object detection, object tracking, video analysis, and image processing using OpenCV, PyTorch, and TensorFlow.</li>
+                        <li><span>Machine Learning</span><br>Proficient in developing and deploying machine learning models for predictive maintenance, anomaly detection, and other use cases.</li>
+                        <li><span>MLOps</span><br>Experience in implementing CI/CD pipelines, data validation, hyperparameter tuning, and containerization for efficient model deployment and monitoring.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Contactless Control System</span><br>Led a team of 3 in creating a real-time contactless palm print recognition system for biometrics, achieving an impressive 75% mAP rate.</li>
+                        <li><span>EngageVision Pro</span><br>Developed a computer vision-based solution for tracking customer engagement in retail environments, integrating with Snowflake database for data-driven decision making.</li>
+                        <li><span>Predictive Maintenance</span><br>Implemented an end-to-end machine learning project for predictive maintenance, achieving 98.8% accuracy, with automated deployment using Docker and AWS.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Existing Contact Form -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> smthrbz@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/channel/UCwj3IQlO3ny-5mEo6Z0hDqQ"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/smith-ss-9742751b2/"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.instagram.com/s3_cuts/"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    } 
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxJ7d_BhKJauUGVyfqddNaQi1mtO52Pu4hAT6tA3ofcMTKewiAJjq_zVq9CBECSqcLuCQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function (){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
